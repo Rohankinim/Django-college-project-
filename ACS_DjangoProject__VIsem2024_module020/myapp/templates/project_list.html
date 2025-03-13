@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project List</title>
+</head>
+<body>
+    <h1>Project List</h1>
+    <ul>
+        {% for project in projects %}
+            <li>{{ project.topic }} by {{ project.student.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
